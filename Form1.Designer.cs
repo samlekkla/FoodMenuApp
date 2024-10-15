@@ -32,6 +32,7 @@
             recipesToolStripMenuItem = new ToolStripMenuItem();
             searchToolStripMenuItem = new ToolStripMenuItem();
             logInToolStripMenuItem = new ToolStripMenuItem();
+            button1 = new Button();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,11 +64,22 @@
             logInToolStripMenuItem.Size = new Size(64, 24);
             logInToolStripMenuItem.Text = "Log in";
             // 
+            // button1
+            // 
+            button1.Location = new Point(317, 156);
+            button1.Name = "button1";
+            button1.Size = new Size(158, 75);
+            button1.TabIndex = 1;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "Form1";
@@ -84,5 +96,6 @@
         private ToolStripMenuItem recipesToolStripMenuItem;
         private ToolStripMenuItem searchToolStripMenuItem;
         private ToolStripMenuItem logInToolStripMenuItem;
+        private Button button1;
     }
 }
