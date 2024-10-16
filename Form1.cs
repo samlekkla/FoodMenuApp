@@ -16,6 +16,7 @@ namespace GrupparbeteFoodapplication
 
 
            MessageBox.Show($"{text}\n{result}");
+           //här är en kommentar från tone 
         }
     }
 }
