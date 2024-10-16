@@ -10,12 +10,12 @@ namespace GrupparbeteFoodapplication
         private void buttonTest_Click(object sender, EventArgs e)
         {
             string text = "Hello, world!";
-            int tal'5' = 1;
-            int tal7 = 2;
+            int tal1 = 3;
+            int tal2 = 5;
             int result = tal1 + tal2;
 
 
-           // MessageBox.Show($"{text}\n{result}");
+           MessageBox.Show($"{text}\n{result}");
         }
     }
 }
