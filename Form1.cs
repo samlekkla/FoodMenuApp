@@ -11,11 +11,12 @@ namespace GrupparbeteFoodapplication
         {
             string text = "Hello, world!";
             int tal1 = 3;
-            int tal2 = 5;
+            int tal2 = 7;
             int result = tal1 + tal2;
 
 
            MessageBox.Show($"{text}\n{result}");
+           //här är en kommentar från tone 
         }
     }
 }
