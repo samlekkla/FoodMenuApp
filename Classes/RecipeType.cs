@@ -15,6 +15,8 @@ namespace GrupparbeteFoodapplication.Classes
             FoodType = foodType;
         }
 
+        
+
         public override string ToString()
         {
             return FoodType;
