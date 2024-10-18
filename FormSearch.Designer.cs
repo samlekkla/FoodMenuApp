@@ -35,14 +35,16 @@
             labelResult = new Label();
             listBoxResult = new ListBox();
             labelRecipeDetails = new Label();
-            listBox2 = new ListBox();
-            button1 = new Button();
+            listBoxRecipeDetails = new ListBox();
+            buttonClose = new Button();
+            labelTitel = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // labelSearchRecipe
             // 
             labelSearchRecipe.AutoSize = true;
-            labelSearchRecipe.Location = new Point(38, 25);
+            labelSearchRecipe.Location = new Point(38, 9);
             labelSearchRecipe.Name = "labelSearchRecipe";
             labelSearchRecipe.Size = new Size(102, 20);
             labelSearchRecipe.TabIndex = 0;
@@ -51,7 +53,7 @@
             // labelRecipeType
             // 
             labelRecipeType.AutoSize = true;
-            labelRecipeType.Location = new Point(38, 60);
+            labelRecipeType.Location = new Point(38, 83);
             labelRecipeType.Name = "labelRecipeType";
             labelRecipeType.Size = new Size(92, 20);
             labelRecipeType.TabIndex = 1;
@@ -60,14 +62,14 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(136, 57);
+            comboBox1.Location = new Point(136, 80);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 2;
             // 
             // buttonSearch
             // 
-            buttonSearch.Location = new Point(293, 57);
+            buttonSearch.Location = new Point(293, 79);
             buttonSearch.Name = "buttonSearch";
             buttonSearch.Size = new Size(94, 29);
             buttonSearch.TabIndex = 3;
@@ -102,31 +104,49 @@
             labelRecipeDetails.TabIndex = 6;
             labelRecipeDetails.Text = "Recipe Details";
             // 
-            // listBox2
+            // listBoxRecipeDetails
             // 
-            listBox2.FormattingEnabled = true;
-            listBox2.Location = new Point(38, 251);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(280, 164);
-            listBox2.TabIndex = 7;
+            listBoxRecipeDetails.FormattingEnabled = true;
+            listBoxRecipeDetails.Location = new Point(38, 251);
+            listBoxRecipeDetails.Name = "listBoxRecipeDetails";
+            listBoxRecipeDetails.Size = new Size(280, 164);
+            listBoxRecipeDetails.TabIndex = 7;
             // 
-            // button1
+            // buttonClose
             // 
-            button1.Location = new Point(499, 139);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 8;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            buttonClose.Location = new Point(645, 386);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(143, 29);
+            buttonClose.TabIndex = 8;
+            buttonClose.Text = "Close";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += button1_Click;
+            // 
+            // labelTitel
+            // 
+            labelTitel.AutoSize = true;
+            labelTitel.Location = new Point(38, 48);
+            labelTitel.Name = "labelTitel";
+            labelTitel.Size = new Size(45, 20);
+            labelTitel.TabIndex = 10;
+            labelTitel.Text = "Titel: ";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(136, 45);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(151, 27);
+            textBox1.TabIndex = 11;
             // 
             // FormSearch
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(listBox2);
+            ClientSize = new Size(828, 467);
+            Controls.Add(textBox1);
+            Controls.Add(labelTitel);
+            Controls.Add(buttonClose);
+            Controls.Add(listBoxRecipeDetails);
             Controls.Add(labelRecipeDetails);
             Controls.Add(listBoxResult);
             Controls.Add(labelResult);
@@ -149,7 +169,9 @@
         private Label labelResult;
         private ListBox listBoxResult;
         private Label labelRecipeDetails;
-        private ListBox listBox2;
-        private Button button1;
+        private ListBox listBoxRecipeDetails;
+        private Button buttonClose;
+        private Label labelTitel;
+        private TextBox textBox1;
     }
 }
