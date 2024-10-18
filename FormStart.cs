@@ -3,11 +3,11 @@ using Newtonsoft.Json;
 
 namespace GrupparbeteFoodapplication
 {
-    public partial class Form1 : Form
+    public partial class FormStart : Form
     {
         private Recipemanager recipemanager;
         private List<Recipe> recipes;
-        public Form1()
+        public FormStart()
         {
             InitializeComponent();
             recipemanager = new Recipemanager();
@@ -133,6 +133,18 @@ namespace GrupparbeteFoodapplication
         private void buttonClear_Click(object sender, EventArgs e)
         {
             ClearFormFields();
+        }
+
+        private void buttonSearchRecipe_Click(object sender, EventArgs e)
+        {
+            FormSearch form = new FormSearch(this);
+            form.ShowDialog();
+        }
+
+        public void ReturnValues(string text)
+        {
+            //Här körs koden som anropas från andra formuläret.
+            MessageBox.Show(text);
         }
     }
 }

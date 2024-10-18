@@ -1,6 +1,6 @@
 ﻿namespace GrupparbeteFoodapplication
 {
-    partial class Form1
+    partial class FormStart
     {
         /// <summary>
         ///  Required designer variable.
@@ -39,6 +39,7 @@
             buttonUpdate = new Button();
             buttonDelete = new Button();
             buttonClear = new Button();
+            buttonSearchRecipe = new Button();
             SuspendLayout();
             // 
             // label1
@@ -139,11 +140,22 @@
             buttonClear.UseVisualStyleBackColor = true;
             buttonClear.Click += buttonClear_Click;
             // 
-            // Form1
+            // buttonSearchRecipe
+            // 
+            buttonSearchRecipe.Location = new Point(302, 394);
+            buttonSearchRecipe.Name = "buttonSearchRecipe";
+            buttonSearchRecipe.Size = new Size(94, 29);
+            buttonSearchRecipe.TabIndex = 11;
+            buttonSearchRecipe.Text = "Search Recipe";
+            buttonSearchRecipe.UseVisualStyleBackColor = true;
+            buttonSearchRecipe.Click += buttonSearchRecipe_Click;
+            // 
+            // FormStart
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(buttonSearchRecipe);
             Controls.Add(buttonClear);
             Controls.Add(buttonDelete);
             Controls.Add(buttonUpdate);
@@ -155,7 +167,7 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "FormStart";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -174,5 +186,6 @@
         private Button buttonUpdate;
         private Button buttonDelete;
         private Button buttonClear;
+        private Button buttonSearchRecipe;
     }
 }
