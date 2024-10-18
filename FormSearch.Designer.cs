@@ -36,6 +36,7 @@
             listBoxResult = new ListBox();
             labelRecipeDetails = new Label();
             listBox2 = new ListBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // labelSearchRecipe
@@ -72,6 +73,7 @@
             buttonSearch.TabIndex = 3;
             buttonSearch.Text = "Search";
             buttonSearch.UseVisualStyleBackColor = true;
+            buttonSearch.Click += buttonSearch_Click;
             // 
             // labelResult
             // 
@@ -108,11 +110,22 @@
             listBox2.Size = new Size(280, 164);
             listBox2.TabIndex = 7;
             // 
+            // button1
+            // 
+            button1.Location = new Point(499, 139);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 8;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // FormSearch
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(listBox2);
             Controls.Add(labelRecipeDetails);
             Controls.Add(listBoxResult);
@@ -123,7 +136,6 @@
             Controls.Add(labelSearchRecipe);
             Name = "FormSearch";
             Text = "FormSearch";
-
             ResumeLayout(false);
             PerformLayout();
         }
@@ -138,5 +150,6 @@
         private ListBox listBoxResult;
         private Label labelRecipeDetails;
         private ListBox listBox2;
+        private Button button1;
     }
 }
