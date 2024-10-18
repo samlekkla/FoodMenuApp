@@ -46,10 +46,10 @@ namespace GrupparbeteFoodapplication
         private void LoadRecipes()
         {
             recipes = recipemanager.LoadRecipes();
-            listBoxRecipes.Items.Clear();
+            comboBoxRecipeView.Items.Clear();
             foreach (var recipe in recipes)
             {
-                listBoxRecipes.Items.Add(recipe.Name);
+                comboBoxRecipeView.Items.Add(recipe.Name);
             }
         }
 
@@ -57,7 +57,7 @@ namespace GrupparbeteFoodapplication
         {
             comboBoxType.SelectedIndex = -1;
             textBoxName.Clear();
-            textBoxDescription.Clear();
+            richTextBoxDescription.Clear();
 
         }
 
@@ -67,7 +67,7 @@ namespace GrupparbeteFoodapplication
             {
                 Type = comboBoxType.SelectedItem?.ToString(),
                 Name = textBoxName.Text,
-                Description = textBoxDescription.Text,
+                Description = richTextBoxDescription.Text,
 
             };
 
@@ -80,15 +80,15 @@ namespace GrupparbeteFoodapplication
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            if (listBoxRecipes.SelectedItem != null)
+            if (comboBoxRecipeView.SelectedItem != null)
             {
-                var selectedTitle = listBoxRecipes.SelectedItem.ToString();
+                var selectedTitle = comboBoxRecipeView.SelectedItem.ToString();
                 var recipe = recipes.FirstOrDefault(r => r.Name == selectedTitle);
 
                 if (recipe != null)
                 {
                     recipe.Name = textBoxName.Text;
-                    recipe.Description = textBoxDescription.Text;
+                    recipe.Description = richTextBoxDescription.Text;
                     recipe.Type = comboBoxType.SelectedItem?.ToString();
                     recipemanager.SaveRecipes(recipes);
                     LoadRecipes();
@@ -99,9 +99,9 @@ namespace GrupparbeteFoodapplication
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            if (listBoxRecipes.SelectedItem != null)
+            if (comboBoxRecipeView.SelectedItem != null)
             {
-                var selectedTitle = listBoxRecipes.SelectedItem.ToString();
+                var selectedTitle = comboBoxRecipeView.SelectedItem.ToString();
                 var recipeToRemove = recipes.FirstOrDefault(r => r.Name == selectedTitle);
 
                 if (recipeToRemove != null)
@@ -114,26 +114,8 @@ namespace GrupparbeteFoodapplication
             }
         }
 
-        private void listBoxRecipes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listBoxRecipes.SelectedItem != null)
-            {
-                var selectedTitle = listBoxRecipes.SelectedItem.ToString();
-                var recipe = recipes.FirstOrDefault(r => r.Name == selectedTitle);
 
-                if (recipe != null)
-                {
-                    textBoxName.Text = recipe.Name;
-                    textBoxDescription.Text = recipe.Description;
-                    comboBoxType.SelectedItem = recipe.Type;
-                }
-            }
-        }
 
-        private void buttonClear_Click(object sender, EventArgs e)
-        {
-            ClearFormFields();
-        }
 
         private void buttonSearchRecipe_Click(object sender, EventArgs e)
         {
@@ -146,5 +128,26 @@ namespace GrupparbeteFoodapplication
             //Här körs koden som anropas från andra formuläret.
             MessageBox.Show(text);
         }
+
+
+
+        private void comboBoxRecipeView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (comboBoxRecipeView.SelectedItem != null)
+            {
+                var selectedTitle = comboBoxRecipeView.SelectedItem.ToString();
+                var recipe = recipes.FirstOrDefault(r => r.Name == selectedTitle);
+
+                if (recipe != null)
+                {
+                    textBoxName.Text = recipe.Name;
+                    richTextBoxDescription.Text = recipe.Description;
+                    comboBoxType.SelectedItem = recipe.Type;
+                }
+            }
+        }
+
+        
     }
 }

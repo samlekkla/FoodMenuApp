@@ -31,21 +31,19 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            comboBoxType = new ComboBox();
             textBoxName = new TextBox();
-            textBoxDescription = new TextBox();
-            listBoxRecipes = new ListBox();
-            buttonSave = new Button();
-            buttonUpdate = new Button();
-            buttonDelete = new Button();
-            buttonClear = new Button();
             buttonSearchRecipe = new Button();
+            comboBoxRecipeView = new ComboBox();
+            label4 = new Label();
+            richTextBoxDescription = new RichTextBox();
+            comboBoxType = new ComboBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(71, 81);
+            label1.Location = new Point(485, 51);
             label1.Name = "label1";
             label1.Size = new Size(40, 20);
             label1.TabIndex = 0;
@@ -54,7 +52,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(71, 162);
+            label2.Location = new Point(485, 110);
             label2.Name = "label2";
             label2.Size = new Size(49, 20);
             label2.TabIndex = 1;
@@ -63,86 +61,22 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(71, 234);
+            label3.Location = new Point(485, 176);
             label3.Name = "label3";
             label3.Size = new Size(85, 20);
             label3.TabIndex = 2;
             label3.Text = "Description";
             // 
-            // comboBoxType
-            // 
-            comboBoxType.FormattingEnabled = true;
-            comboBoxType.Location = new Point(185, 82);
-            comboBoxType.Name = "comboBoxType";
-            comboBoxType.Size = new Size(151, 28);
-            comboBoxType.TabIndex = 3;
-            // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(185, 162);
+            textBoxName.Location = new Point(542, 110);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(151, 27);
+            textBoxName.Size = new Size(201, 27);
             textBoxName.TabIndex = 4;
-            // 
-            // textBoxDescription
-            // 
-            textBoxDescription.Location = new Point(185, 234);
-            textBoxDescription.Name = "textBoxDescription";
-            textBoxDescription.Size = new Size(151, 27);
-            textBoxDescription.TabIndex = 5;
-            // 
-            // listBoxRecipes
-            // 
-            listBoxRecipes.FormattingEnabled = true;
-            listBoxRecipes.Location = new Point(481, 73);
-            listBoxRecipes.Name = "listBoxRecipes";
-            listBoxRecipes.Size = new Size(277, 184);
-            listBoxRecipes.TabIndex = 6;
-            listBoxRecipes.SelectedIndexChanged += listBoxRecipes_SelectedIndexChanged;
-            // 
-            // buttonSave
-            // 
-            buttonSave.Location = new Point(74, 341);
-            buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(94, 29);
-            buttonSave.TabIndex = 7;
-            buttonSave.Text = "Save";
-            buttonSave.UseVisualStyleBackColor = true;
-            buttonSave.Click += buttonSave_Click;
-            // 
-            // buttonUpdate
-            // 
-            buttonUpdate.Location = new Point(231, 341);
-            buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(94, 29);
-            buttonUpdate.TabIndex = 8;
-            buttonUpdate.Text = "Update";
-            buttonUpdate.UseVisualStyleBackColor = true;
-            buttonUpdate.Click += buttonUpdate_Click;
-            // 
-            // buttonDelete
-            // 
-            buttonDelete.Location = new Point(374, 341);
-            buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(94, 29);
-            buttonDelete.TabIndex = 9;
-            buttonDelete.Text = "Delete";
-            buttonDelete.UseVisualStyleBackColor = true;
-            buttonDelete.Click += buttonDelete_Click;
-            // 
-            // buttonClear
-            // 
-            buttonClear.Location = new Point(529, 341);
-            buttonClear.Name = "buttonClear";
-            buttonClear.Size = new Size(94, 29);
-            buttonClear.TabIndex = 10;
-            buttonClear.Text = "Clear";
-            buttonClear.UseVisualStyleBackColor = true;
-            buttonClear.Click += buttonClear_Click;
             // 
             // buttonSearchRecipe
             // 
-            buttonSearchRecipe.Location = new Point(302, 394);
+            buttonSearchRecipe.Location = new Point(48, 320);
             buttonSearchRecipe.Name = "buttonSearchRecipe";
             buttonSearchRecipe.Size = new Size(94, 29);
             buttonSearchRecipe.TabIndex = 11;
@@ -150,20 +84,61 @@
             buttonSearchRecipe.UseVisualStyleBackColor = true;
             buttonSearchRecipe.Click += buttonSearchRecipe_Click;
             // 
+            // comboBoxRecipeView
+            // 
+            comboBoxRecipeView.FormattingEnabled = true;
+            comboBoxRecipeView.Location = new Point(48, 113);
+            comboBoxRecipeView.Name = "comboBoxRecipeView";
+            comboBoxRecipeView.Size = new Size(191, 28);
+            comboBoxRecipeView.TabIndex = 12;
+            comboBoxRecipeView.SelectedIndexChanged += comboBoxRecipeView_SelectedIndexChanged;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(48, 74);
+            label4.Name = "label4";
+            label4.Size = new Size(77, 20);
+            label4.TabIndex = 13;
+            label4.Text = "Recipe list";
+            // 
+            // richTextBoxDescription
+            // 
+            richTextBoxDescription.Location = new Point(485, 199);
+            richTextBoxDescription.Name = "richTextBoxDescription";
+            richTextBoxDescription.Size = new Size(258, 150);
+            richTextBoxDescription.TabIndex = 15;
+            richTextBoxDescription.Text = "";
+            // 
+            // comboBoxType
+            // 
+            comboBoxType.FormattingEnabled = true;
+            comboBoxType.Location = new Point(548, 51);
+            comboBoxType.Name = "comboBoxType";
+            comboBoxType.Size = new Size(195, 28);
+            comboBoxType.TabIndex = 16;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(48, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 17;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // FormStart
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(buttonSearchRecipe);
-            Controls.Add(buttonClear);
-            Controls.Add(buttonDelete);
-            Controls.Add(buttonUpdate);
-            Controls.Add(buttonSave);
-            Controls.Add(listBoxRecipes);
-            Controls.Add(textBoxDescription);
-            Controls.Add(textBoxName);
+            Controls.Add(button1);
             Controls.Add(comboBoxType);
+            Controls.Add(richTextBoxDescription);
+            Controls.Add(label4);
+            Controls.Add(comboBoxRecipeView);
+            Controls.Add(buttonSearchRecipe);
+            Controls.Add(textBoxName);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -178,14 +153,12 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private ComboBox comboBoxType;
         private TextBox textBoxName;
-        private TextBox textBoxDescription;
-        private ListBox listBoxRecipes;
-        private Button buttonSave;
-        private Button buttonUpdate;
-        private Button buttonDelete;
-        private Button buttonClear;
         private Button buttonSearchRecipe;
+        private ComboBox comboBoxRecipeView;
+        private Label label4;
+        private RichTextBox richTextBoxDescription;
+        private ComboBox comboBoxType;
+        private Button button1;
     }
 }
