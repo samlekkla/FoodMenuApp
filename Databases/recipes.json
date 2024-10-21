@@ -1,0 +1,27 @@
+[
+  {
+    "Type": "Meat",
+    "Name": "Spaghetti Bolognese",
+    "Description": "1. Koka pastan enligt anvisningarna på förpackningen.\n2. Fräs lök och vitlök i olivolja tills de mjuknar.\n3. Tillsätt nötfärs och stek tills köttet är genomstekt.\n4. Häll i krossade tomater, tomatpuré, vatten, buljongtärning, oregano, salt och peppar. Låt puttra i 20 minuter.\n5. Servera såsen över pastan och toppa med riven parmesan."
+  },
+  {
+    "Type": "Fish",
+    "Name": "Ugnsbakad lax med potatis",
+    "Description": "1. Sätt ugnen på 200°C.\n2. Skär potatis i tunna skivor och lägg i en ugnssäker form. Krydda med salt och peppar.\n3. Lägg laxfiléerna ovanpå potatisen och krydda med salt, peppar och pressad citron.\n4. Baka i ugnen i 20-25 minuter tills laxen är genomstekt och potatisen är mjuk.\n5. Servera med en sallad på babyspenat, körsbärstomater och rödlök."
+  },
+  {
+    "Type": "Soup",
+    "Name": "Morotssoppa",
+    "Description": "1. Fräs hackad lök och vitlök i smör tills de mjuknar.\n2. Tillsätt skalade och skivade morötter, potatis och buljongtärning. Häll på vatten så det täcker grönsakerna.\n3. Koka tills morötterna är mjuka, ca 20 minuter.\n4. Mixa soppan slät med en stavmixer. Tillsätt grädde och smaka av med salt och peppar.\n5. Servera med ett gott bröd."
+  },
+  {
+    "Type": "Sallader",
+    "Name": "Grekisk sallad",
+    "Description": "1. Skär tomat, gurka, paprika och rödlök i bitar och lägg i en salladsskål.\n2. Smula över fetaost och oliver.\n3. Blanda olivolja, vitvinsvinäger, pressad vitlök, oregano, salt och peppar till en dressing.\n4. Häll dressingen över salladen och blanda väl."
+  },
+  {
+    "Type": "Desseter/Kakor",
+    "Name": "Chokladkladdkaka",
+    "Description": "1. Sätt ugnen på 175°C.\n2. Smält smör och choklad över ett vattenbad. Låt svalna något.\n3. Vispa ägg och socker pösigt. Blanda ner chokladblandningen.\n4. Blanda mjöl och bakpulver och vänd ner i smeten.\n5. Häll upp smeten i en smord och bröad form, ca 24 cm i diameter.\n6. Grädda kakan i nedre delen av ugnen i 20-25 minuter. Den ska vara lite kladdig i mitten.\n7. Låt kakan svalna och pudra över florsocker innan servering."
+  }
+]

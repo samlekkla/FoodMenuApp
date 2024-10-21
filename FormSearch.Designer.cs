@@ -30,7 +30,7 @@
         {
             labelSearchRecipe = new Label();
             labelRecipeType = new Label();
-            comboBox1 = new ComboBox();
+            comboBoxType = new ComboBox();
             buttonSearch = new Button();
             labelResult = new Label();
             listBoxResult = new ListBox();
@@ -38,7 +38,8 @@
             listBoxRecipeDetails = new ListBox();
             buttonClose = new Button();
             labelTitel = new Label();
-            textBox1 = new TextBox();
+            textBoxTitel = new TextBox();
+            buttonShowRecipe = new Button();
             SuspendLayout();
             // 
             // labelSearchRecipe
@@ -59,19 +60,20 @@
             labelRecipeType.TabIndex = 1;
             labelRecipeType.Text = "Recipe Type:";
             // 
-            // comboBox1
+            // comboBoxType
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(136, 80);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 2;
+            comboBoxType.FormattingEnabled = true;
+            comboBoxType.Location = new Point(136, 80);
+            comboBoxType.Name = "comboBoxType";
+            comboBoxType.Size = new Size(151, 28);
+            comboBoxType.TabIndex = 2;
+            comboBoxType.SelectedIndexChanged += comboBoxType_SelectedIndexChanged;
             // 
             // buttonSearch
             // 
             buttonSearch.Location = new Point(293, 79);
             buttonSearch.Name = "buttonSearch";
-            buttonSearch.Size = new Size(94, 29);
+            buttonSearch.Size = new Size(127, 29);
             buttonSearch.TabIndex = 3;
             buttonSearch.Text = "Search";
             buttonSearch.UseVisualStyleBackColor = true;
@@ -91,9 +93,8 @@
             listBoxResult.FormattingEnabled = true;
             listBoxResult.Location = new Point(38, 141);
             listBoxResult.Name = "listBoxResult";
-            listBoxResult.Size = new Size(245, 64);
+            listBoxResult.Size = new Size(249, 64);
             listBoxResult.TabIndex = 5;
-            listBoxResult.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // labelRecipeDetails
             // 
@@ -109,7 +110,7 @@
             listBoxRecipeDetails.FormattingEnabled = true;
             listBoxRecipeDetails.Location = new Point(38, 251);
             listBoxRecipeDetails.Name = "listBoxRecipeDetails";
-            listBoxRecipeDetails.Size = new Size(280, 164);
+            listBoxRecipeDetails.Size = new Size(349, 164);
             listBoxRecipeDetails.TabIndex = 7;
             // 
             // buttonClose
@@ -131,19 +132,30 @@
             labelTitel.TabIndex = 10;
             labelTitel.Text = "Titel: ";
             // 
-            // textBox1
+            // textBoxTitel
             // 
-            textBox1.Location = new Point(136, 45);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 27);
-            textBox1.TabIndex = 11;
+            textBoxTitel.Location = new Point(136, 45);
+            textBoxTitel.Name = "textBoxTitel";
+            textBoxTitel.Size = new Size(151, 27);
+            textBoxTitel.TabIndex = 11;
+            // 
+            // buttonShowRecipe
+            // 
+            buttonShowRecipe.Location = new Point(293, 141);
+            buttonShowRecipe.Name = "buttonShowRecipe";
+            buttonShowRecipe.Size = new Size(117, 29);
+            buttonShowRecipe.TabIndex = 12;
+            buttonShowRecipe.Text = "Show Recipe";
+            buttonShowRecipe.UseVisualStyleBackColor = true;
+            buttonShowRecipe.Click += buttonShowRecipe_Click;
             // 
             // FormSearch
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(828, 467);
-            Controls.Add(textBox1);
+            Controls.Add(buttonShowRecipe);
+            Controls.Add(textBoxTitel);
             Controls.Add(labelTitel);
             Controls.Add(buttonClose);
             Controls.Add(listBoxRecipeDetails);
@@ -151,7 +163,7 @@
             Controls.Add(listBoxResult);
             Controls.Add(labelResult);
             Controls.Add(buttonSearch);
-            Controls.Add(comboBox1);
+            Controls.Add(comboBoxType);
             Controls.Add(labelRecipeType);
             Controls.Add(labelSearchRecipe);
             Name = "FormSearch";
@@ -164,7 +176,7 @@
 
         private Label labelSearchRecipe;
         private Label labelRecipeType;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxType;
         private Button buttonSearch;
         private Label labelResult;
         private ListBox listBoxResult;
@@ -172,6 +184,7 @@
         private ListBox listBoxRecipeDetails;
         private Button buttonClose;
         private Label labelTitel;
-        private TextBox textBox1;
+        private TextBox textBoxTitel;
+        private Button buttonShowRecipe;
     }
 }

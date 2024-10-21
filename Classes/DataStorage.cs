@@ -8,7 +8,7 @@ namespace GrupparbeteFoodapplication.Classes
 {
     public class DataStorage
     {
-        private const string FILE_PATH = @"insert_filepath";
+        private const string FILE_PATH = @"C:\Users\Sam\Desktop\CloudAzure-Jensen\GrupparbeteFoodapplication\Databases\recipes.json";
 
         public void SaveUpdatedRecipe(Recipe recipe)
         {

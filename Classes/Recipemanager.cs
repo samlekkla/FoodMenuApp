@@ -10,26 +10,28 @@ namespace GrupparbeteFoodapplication.Classes
 {
     public class Recipemanager
     {
-        private const string filePath = "recipes.json";
 
-        public class Recipe
+        private readonly string _filePath;
+
+        public Recipemanager(string filePath)
         {
-
+            _filePath = filePath;
         }
+               
 
         public List<Recipe> LoadRecipes()
         {
-            if (!File.Exists(filePath))
-                return new List<Recipe>();
+            if (!File.Exists(_filePath))
+                throw new FileNotFoundException("Recipe file not found.");
 
-            var json = File.ReadAllText(filePath);
-            return JsonConvert.DeserializeObject<List<Recipe>>(json) ?? new List<Recipe>();
+            var json = File.ReadAllText(_filePath);
+            return JsonConvert.DeserializeObject<List<Recipe>>(json);
         }
 
         public void SaveRecipes(List<Recipe> recipes)
         {
             var json = JsonConvert.SerializeObject(recipes, Formatting.Indented);
-            File.WriteAllText(filePath, json);
+            File.WriteAllText(_filePath, json);
         }
     }
 }
