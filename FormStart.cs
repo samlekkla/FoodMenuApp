@@ -151,7 +151,7 @@ namespace GrupparbeteFoodapplication
 
         private void buttonLoginAdmin_Click(object sender, EventArgs e)
         {
-            Admin adminForm = new Admin();
+            FormAdmin adminForm = new FormAdmin(this);
             adminForm.ShowDialog();
         }
     }
