@@ -8,12 +8,12 @@ namespace GrupparbeteFoodapplication.Classes
         // Metod för att representera administratörsuppgifter
         private class AdminCredentials
         {
-            public string username { get; set; }
-            public string password { get; set; }
+            public string? username { get; set; }
+            public string? password { get; set; }
         }
         private class AdminFile
         {
-            public List<AdminCredentials> Admins { get; set; }
+            public List<AdminCredentials> Admins { get; set; } = new List<AdminCredentials>();
 
         }
 
@@ -32,7 +32,7 @@ namespace GrupparbeteFoodapplication.Classes
             try
             {
                 string jsonContent = File.ReadAllText(adminLogFilePath); // Läser filen
-                AdminFile adminData = JsonSerializer.Deserialize<AdminFile>(jsonContent); // Deserialisera JSON 
+                AdminFile adminData = JsonSerializer.Deserialize<AdminFile>(jsonContent) ?? new AdminFile(); // Deserialisera JSON 
                                                                                           // omvandla JSON-struktur från ett textformat till ett objekt som kan användas C#,
                 return adminData?.Admins ?? new List<AdminCredentials>(); // Returnera admin-listan
                                                                           // ?? är ett sätt att enkelt hantera null-värden och tillhandahålla ett standardvärde om något är null.
