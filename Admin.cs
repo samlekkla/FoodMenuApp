@@ -23,6 +23,11 @@ namespace GrupparbeteFoodapplication
 
             // Visa resultatet för användaren med en MessageBox
             MessageBox.Show(loginResult, "Inloggningsstatus", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (loginResult == "Inloggningen lyckades!")
+            {
+                this.DialogResult = DialogResult.OK; // Indikera lyckad inloggning
+                this.Close();
+            }
         }
     }
 

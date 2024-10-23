@@ -1,4 +1,5 @@
 using System.Windows.Forms;
+using GrupparbeteFoodapplication.Classes;
 using Newtonsoft.Json;
 
 namespace GrupparbeteFoodapplication
@@ -148,6 +149,10 @@ namespace GrupparbeteFoodapplication
             }
         }
 
-        
+        private void buttonLoginAdmin_Click(object sender, EventArgs e)
+        {
+            Admin adminForm = new Admin();
+            adminForm.ShowDialog();
+        }
     }
 }
