@@ -37,7 +37,7 @@
             label4 = new Label();
             richTextBoxDescription = new RichTextBox();
             comboBoxType = new ComboBox();
-            button1login = new Button();
+            buttonLoginAdmin = new Button();
             SuspendLayout();
             // 
             // label1
@@ -118,22 +118,22 @@
             comboBoxType.Size = new Size(195, 28);
             comboBoxType.TabIndex = 16;
             // 
-            // button1login
+            // buttonLoginAdmin
             // 
-            button1login.Location = new Point(48, 25);
-            button1login.Name = "button1login";
-            button1login.Size = new Size(94, 29);
-            button1login.TabIndex = 17;
-            button1login.Text = "LOGIN";
-            button1login.UseVisualStyleBackColor = true;
-            button1login.Click += button1login_Click;
+            buttonLoginAdmin.Location = new Point(48, 25);
+            buttonLoginAdmin.Name = "buttonLoginAdmin";
+            buttonLoginAdmin.Size = new Size(94, 29);
+            buttonLoginAdmin.TabIndex = 17;
+            buttonLoginAdmin.Text = "LOGIN";
+            buttonLoginAdmin.UseVisualStyleBackColor = true;
+            
             // 
             // FormStart
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1login);
+            Controls.Add(buttonLoginAdmin);
             Controls.Add(comboBoxType);
             Controls.Add(richTextBoxDescription);
             Controls.Add(label4);
@@ -160,6 +160,6 @@
         private Label label4;
         private RichTextBox richTextBoxDescription;
         private ComboBox comboBoxType;
-        private Button button1login;
+        private Button buttonLoginAdmin;
     }
 }

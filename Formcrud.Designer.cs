@@ -1,6 +1,6 @@
 ﻿namespace GrupparbeteFoodapplication
 {
-    partial class Form2
+    partial class Formcrud
     {
         /// <summary>
         /// Required designer variable.

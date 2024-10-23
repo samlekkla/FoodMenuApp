@@ -11,11 +11,11 @@ using Newtonsoft.Json;
 
 namespace GrupparbeteFoodapplication
 {
-    public partial class Form2 : Form
+    public partial class Formcrud : Form
     {
         private Recipemanager recipemanager;
         private List<Recipe> recipes;
-        public Form2()
+        public Formcrud()
         {
             InitializeComponent();
             recipemanager = new Recipemanager();
