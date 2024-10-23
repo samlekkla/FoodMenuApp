@@ -23,7 +23,7 @@ namespace GrupparbeteFoodapplication
         }
         public class Recipemanager
         {
-            private const string filePath = "recipes.json";
+            private const string filePath = "C:\\Users\\Sam\\Desktop\\CloudAzure-Jensen\\GruppArbeteAdressBoken\\Databases\\recipes.json";
 
             public List<Recipe> LoadRecipes()
             {
@@ -151,8 +151,8 @@ namespace GrupparbeteFoodapplication
 
         private void buttonLoginAdmin_Click(object sender, EventArgs e)
         {
-            FormAdmin adminForm = new FormAdmin(this);
-            adminForm.ShowDialog();
+            FormLogin formLogin = new FormLogin(this);
+            formLogin.ShowDialog();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace GrupparbeteFoodapplication
 {
-    partial class Admin
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,78 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
+            labelUsername = new Label();
             textBoxUsername = new TextBox();
             textBoxPassword = new TextBox();
-            labelUsername = new Label();
             labelPassword = new Label();
             buttonLogin = new Button();
+            lblErrorMessage = new Label();
             SuspendLayout();
-            // 
-            // textBoxUsername
-            // 
-            textBoxUsername.Location = new Point(229, 139);
-            textBoxUsername.Name = "textBoxUsername";
-            textBoxUsername.Size = new Size(229, 31);
-            textBoxUsername.TabIndex = 0;
-            // 
-            // textBoxPassword
-            // 
-            textBoxPassword.Location = new Point(229, 225);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(229, 31);
-            textBoxPassword.TabIndex = 1;
             // 
             // labelUsername
             // 
             labelUsername.AutoSize = true;
-            labelUsername.Location = new Point(225, 111);
+            labelUsername.Location = new Point(218, 142);
             labelUsername.Name = "labelUsername";
-            labelUsername.Size = new Size(91, 25);
-            labelUsername.TabIndex = 2;
+            labelUsername.Size = new Size(75, 20);
+            labelUsername.TabIndex = 0;
             labelUsername.Text = "Username";
+            // 
+            // textBoxUsername
+            // 
+            textBoxUsername.Location = new Point(218, 165);
+            textBoxUsername.Name = "textBoxUsername";
+            textBoxUsername.Size = new Size(192, 27);
+            textBoxUsername.TabIndex = 1;
+            // 
+            // textBoxPassword
+            // 
+            textBoxPassword.Location = new Point(219, 242);
+            textBoxPassword.Name = "textBoxPassword";
+            textBoxPassword.Size = new Size(192, 27);
+            textBoxPassword.TabIndex = 3;
+            textBoxPassword.UseSystemPasswordChar = true;
             // 
             // labelPassword
             // 
             labelPassword.AutoSize = true;
-            labelPassword.Location = new Point(229, 197);
+            labelPassword.Location = new Point(218, 218);
             labelPassword.Name = "labelPassword";
-            labelPassword.Size = new Size(87, 25);
-            labelPassword.TabIndex = 3;
+            labelPassword.Size = new Size(70, 20);
+            labelPassword.TabIndex = 2;
             labelPassword.Text = "Password";
             // 
             // buttonLogin
             // 
-            buttonLogin.Location = new Point(273, 293);
+            buttonLogin.Location = new Point(266, 291);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(130, 34);
-            buttonLogin.TabIndex = 4;
-            buttonLogin.Text = "Log in";
+            buttonLogin.Size = new Size(94, 29);
+            buttonLogin.TabIndex = 5;
+            buttonLogin.Text = "LOGIN";
             buttonLogin.UseVisualStyleBackColor = true;
             buttonLogin.Click += buttonLogin_Click;
             // 
-            // Admin
+            // lblErrorMessage
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            lblErrorMessage.AutoSize = true;
+            lblErrorMessage.Location = new Point(218, 333);
+            lblErrorMessage.Name = "lblErrorMessage";
+            lblErrorMessage.Size = new Size(50, 20);
+            lblErrorMessage.TabIndex = 6;
+            lblErrorMessage.Text = "label1";
+            // 
+            // FormLogin
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.CadetBlue;
-            ClientSize = new Size(682, 450);
+            ClientSize = new Size(700, 450);
+            Controls.Add(lblErrorMessage);
             Controls.Add(buttonLogin);
-            Controls.Add(labelPassword);
-            Controls.Add(labelUsername);
             Controls.Add(textBoxPassword);
+            Controls.Add(labelPassword);
             Controls.Add(textBoxUsername);
-            Name = "Admin";
-            Text = "Form Admin";
+            Controls.Add(labelUsername);
+            Name = "FormLogin";
+            Text = "FormLogin";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private Label labelUsername;
         private TextBox textBoxUsername;
         private TextBox textBoxPassword;
-        private Label labelUsername;
         private Label labelPassword;
         private Button buttonLogin;
+        private Label lblErrorMessage;
     }
 }
