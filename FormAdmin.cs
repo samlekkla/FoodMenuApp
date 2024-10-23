@@ -2,11 +2,14 @@
 
 namespace GrupparbeteFoodapplication
 {
-    public partial class Admin : Form
+    public partial class FormAdmin : Form
     {
-        public Admin()
+        private readonly FormStart _formStart;
+        public FormAdmin(FormStart formStart)
         {
-            InitializeComponent();
+
+             InitializeComponent();
+            _formStart = formStart;
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
