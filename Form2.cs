@@ -1,13 +1,21 @@
+ï»¿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 
 namespace GrupparbeteFoodapplication
 {
-    public partial class FormStart : Form
+    public partial class Form2 : Form
     {
         private Recipemanager recipemanager;
         private List<Recipe> recipes;
-        public FormStart()
+        public Form2()
         {
             InitializeComponent();
             recipemanager = new Recipemanager();
@@ -22,7 +30,7 @@ namespace GrupparbeteFoodapplication
         }
         public class Recipemanager
         {
-            private const string filePath = "recipes.json";
+            private const string filePath = @"C:\users\harit\Documents\recipes.json";
 
             public List<Recipe> LoadRecipes()
             {
@@ -75,7 +83,6 @@ namespace GrupparbeteFoodapplication
             recipemanager.SaveRecipes(recipes);
             LoadRecipes();
             ClearFormFields();
-
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -114,26 +121,8 @@ namespace GrupparbeteFoodapplication
             }
         }
 
-
-
-
-        private void buttonSearchRecipe_Click(object sender, EventArgs e)
-        {
-            FormSearch form = new FormSearch(this);
-            form.ShowDialog();
-        }
-
-        public void ReturnValues(string text)
-        {
-            //Här körs koden som anropas från andra formuläret.
-            MessageBox.Show(text);
-        }
-
-
-
         private void comboBoxRecipeView_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (comboBoxRecipeView.SelectedItem != null)
             {
                 var selectedTitle = comboBoxRecipeView.SelectedItem.ToString();
@@ -146,12 +135,6 @@ namespace GrupparbeteFoodapplication
                     comboBoxType.SelectedItem = recipe.Type;
                 }
             }
-        }
-
-        private void button1login_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            form2.Show();
         }
     }
 }

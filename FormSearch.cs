@@ -27,7 +27,7 @@ namespace GrupparbeteFoodapplication
 
         private void LoadRecipes()
         {
-            var recipeManager = new Recipemanager(@"C:\Users\Sam\Desktop\CloudAzure-Jensen\GrupparbeteFoodapplication\Databases\recipes.json");
+            var recipeManager = new Recipemanager(@"C:\Users\harit\Source\Repos\GrupparbeteFoodapplicationlocalcopy\Databases\recipes.json");
             recipes = recipeManager.LoadRecipes();
 
             foreach (var recipe in recipes)
@@ -39,7 +39,7 @@ namespace GrupparbeteFoodapplication
 
         private void buttonSearch_Click(object sender, EventArgs e)
         {
-            var recipeManager = new Recipemanager(@"C:\Users\Sam\Desktop\CloudAzure-Jensen\GrupparbeteFoodapplication\Databases\recipes.json");
+            var recipeManager = new Recipemanager(@"C:\Users\harit\Source\Repos\GrupparbeteFoodapplicationlocalcopy\Databases\recipes.json");
             var recipes = recipeManager.LoadRecipes();
 
             listBoxResult.Items.Clear();
@@ -152,7 +152,7 @@ namespace GrupparbeteFoodapplication
             var selectedRecipeInfo = listBoxResult.SelectedItem.ToString();
             var selectedRecipeName = selectedRecipeInfo.Split('-')[0].Trim();
 
-            var recipeManager = new Recipemanager(@"C:\Users\Sam\Desktop\CloudAzure-Jensen\GrupparbeteFoodapplication\Databases\recipes.json");
+            var recipeManager = new Recipemanager(@"C:\Users\harit\Source\Repos\GrupparbeteFoodapplicationlocalcopy\Databases\recipes.json");
             var recipes = recipeManager.LoadRecipes();
 
             var selectedRecipe = recipes.FirstOrDefault(r => r.Name.Equals(selectedRecipeName, StringComparison.OrdinalIgnoreCase));
