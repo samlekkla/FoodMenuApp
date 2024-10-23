@@ -43,47 +43,42 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(606, 64);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(485, 51);
             label1.Name = "label1";
-            label1.Size = new Size(49, 25);
+            label1.Size = new Size(40, 20);
             label1.TabIndex = 0;
             label1.Text = "Type";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(606, 138);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(485, 110);
             label2.Name = "label2";
-            label2.Size = new Size(59, 25);
+            label2.Size = new Size(49, 20);
             label2.TabIndex = 1;
             label2.Text = "Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(606, 220);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(485, 176);
             label3.Name = "label3";
-            label3.Size = new Size(102, 25);
+            label3.Size = new Size(85, 20);
             label3.TabIndex = 2;
             label3.Text = "Description";
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(678, 138);
-            textBoxName.Margin = new Padding(4);
+            textBoxName.Location = new Point(542, 110);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(250, 31);
+            textBoxName.Size = new Size(201, 27);
             textBoxName.TabIndex = 4;
             // 
             // buttonSearchRecipe
             // 
-            buttonSearchRecipe.Location = new Point(60, 400);
-            buttonSearchRecipe.Margin = new Padding(4);
+            buttonSearchRecipe.Location = new Point(48, 320);
             buttonSearchRecipe.Name = "buttonSearchRecipe";
-            buttonSearchRecipe.Size = new Size(118, 36);
+            buttonSearchRecipe.Size = new Size(94, 29);
             buttonSearchRecipe.TabIndex = 11;
             buttonSearchRecipe.Text = "Search Recipe";
             buttonSearchRecipe.UseVisualStyleBackColor = true;
@@ -92,47 +87,42 @@
             // comboBoxRecipeView
             // 
             comboBoxRecipeView.FormattingEnabled = true;
-            comboBoxRecipeView.Location = new Point(60, 141);
-            comboBoxRecipeView.Margin = new Padding(4);
+            comboBoxRecipeView.Location = new Point(48, 113);
             comboBoxRecipeView.Name = "comboBoxRecipeView";
-            comboBoxRecipeView.Size = new Size(238, 33);
+            comboBoxRecipeView.Size = new Size(191, 28);
             comboBoxRecipeView.TabIndex = 12;
             comboBoxRecipeView.SelectedIndexChanged += comboBoxRecipeView_SelectedIndexChanged;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(60, 92);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(48, 74);
             label4.Name = "label4";
-            label4.Size = new Size(90, 25);
+            label4.Size = new Size(77, 20);
             label4.TabIndex = 13;
             label4.Text = "Recipe list";
             // 
             // richTextBoxDescription
             // 
-            richTextBoxDescription.Location = new Point(606, 249);
-            richTextBoxDescription.Margin = new Padding(4);
+            richTextBoxDescription.Location = new Point(485, 199);
             richTextBoxDescription.Name = "richTextBoxDescription";
-            richTextBoxDescription.Size = new Size(322, 186);
+            richTextBoxDescription.Size = new Size(258, 150);
             richTextBoxDescription.TabIndex = 15;
             richTextBoxDescription.Text = "";
             // 
             // comboBoxType
             // 
             comboBoxType.FormattingEnabled = true;
-            comboBoxType.Location = new Point(685, 64);
-            comboBoxType.Margin = new Padding(4);
+            comboBoxType.Location = new Point(548, 51);
             comboBoxType.Name = "comboBoxType";
-            comboBoxType.Size = new Size(243, 33);
+            comboBoxType.Size = new Size(195, 28);
             comboBoxType.TabIndex = 16;
             // 
             // buttonLoginAdmin
             // 
-            buttonLoginAdmin.Location = new Point(60, 15);
-            buttonLoginAdmin.Margin = new Padding(4);
+            buttonLoginAdmin.Location = new Point(48, 12);
             buttonLoginAdmin.Name = "buttonLoginAdmin";
-            buttonLoginAdmin.Size = new Size(129, 36);
+            buttonLoginAdmin.Size = new Size(103, 29);
             buttonLoginAdmin.TabIndex = 17;
             buttonLoginAdmin.Text = "Admin Login";
             buttonLoginAdmin.UseVisualStyleBackColor = true;
@@ -140,9 +130,9 @@
             // 
             // FormStart
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1000, 562);
+            ClientSize = new Size(800, 450);
             Controls.Add(buttonLoginAdmin);
             Controls.Add(comboBoxType);
             Controls.Add(richTextBoxDescription);
@@ -153,7 +143,6 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(4);
             Name = "FormStart";
             Text = "Form1";
             ResumeLayout(false);
