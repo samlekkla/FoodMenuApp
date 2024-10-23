@@ -148,7 +148,9 @@ namespace GrupparbeteFoodapplication
             }
         }
 
-       
-       
+        private void buttonLoginAdmin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

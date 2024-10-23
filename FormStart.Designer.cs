@@ -126,7 +126,7 @@
             buttonLoginAdmin.TabIndex = 17;
             buttonLoginAdmin.Text = "LOGIN";
             buttonLoginAdmin.UseVisualStyleBackColor = true;
-            
+            buttonLoginAdmin.Click += buttonLoginAdmin_Click;
             // 
             // FormStart
             // 
