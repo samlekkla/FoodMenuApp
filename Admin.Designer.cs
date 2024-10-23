@@ -37,14 +37,14 @@
             // 
             // textBoxUsername
             // 
-            textBoxUsername.Location = new Point(229, 120);
+            textBoxUsername.Location = new Point(229, 139);
             textBoxUsername.Name = "textBoxUsername";
             textBoxUsername.Size = new Size(229, 31);
             textBoxUsername.TabIndex = 0;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(229, 210);
+            textBoxPassword.Location = new Point(229, 225);
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.Size = new Size(229, 31);
             textBoxPassword.TabIndex = 1;
@@ -52,7 +52,7 @@
             // labelUsername
             // 
             labelUsername.AutoSize = true;
-            labelUsername.Location = new Point(229, 92);
+            labelUsername.Location = new Point(225, 111);
             labelUsername.Name = "labelUsername";
             labelUsername.Size = new Size(91, 25);
             labelUsername.TabIndex = 2;
@@ -61,7 +61,7 @@
             // labelPassword
             // 
             labelPassword.AutoSize = true;
-            labelPassword.Location = new Point(233, 182);
+            labelPassword.Location = new Point(229, 197);
             labelPassword.Name = "labelPassword";
             labelPassword.Size = new Size(87, 25);
             labelPassword.TabIndex = 3;
@@ -69,9 +69,9 @@
             // 
             // buttonLogin
             // 
-            buttonLogin.Location = new Point(291, 294);
+            buttonLogin.Location = new Point(273, 293);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(112, 34);
+            buttonLogin.Size = new Size(130, 34);
             buttonLogin.TabIndex = 4;
             buttonLogin.Text = "Log in";
             buttonLogin.UseVisualStyleBackColor = true;
@@ -81,6 +81,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.CadetBlue;
             ClientSize = new Size(682, 450);
             Controls.Add(buttonLogin);
             Controls.Add(labelPassword);
@@ -88,7 +89,7 @@
             Controls.Add(textBoxPassword);
             Controls.Add(textBoxUsername);
             Name = "Admin";
-            Text = "Admin";
+            Text = "Form Admin";
             ResumeLayout(false);
             PerformLayout();
         }
