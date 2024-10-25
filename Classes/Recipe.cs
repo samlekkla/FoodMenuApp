@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GrupparbeteFoodapplication.Classes
+﻿namespace GrupparbeteFoodapplication.Classes
 {
     public class Recipe
     {
@@ -12,4 +6,6 @@ namespace GrupparbeteFoodapplication.Classes
         public string Description { get; set; }
         public string Type { get; set; }
     }
+
+    
 }

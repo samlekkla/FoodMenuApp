@@ -33,7 +33,6 @@
             textBoxPassword = new TextBox();
             labelPassword = new Label();
             buttonLogin = new Button();
-            lblErrorMessage = new Label();
             SuspendLayout();
             // 
             // labelUsername
@@ -75,25 +74,15 @@
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(94, 29);
             buttonLogin.TabIndex = 5;
-            buttonLogin.Text = "LOGIN";
+            buttonLogin.Text = "SIGN IN";
             buttonLogin.UseVisualStyleBackColor = true;
             buttonLogin.Click += buttonLogin_Click;
-            // 
-            // lblErrorMessage
-            // 
-            lblErrorMessage.AutoSize = true;
-            lblErrorMessage.Location = new Point(218, 333);
-            lblErrorMessage.Name = "lblErrorMessage";
-            lblErrorMessage.Size = new Size(50, 20);
-            lblErrorMessage.TabIndex = 6;
-            lblErrorMessage.Text = "label1";
             // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(700, 450);
-            Controls.Add(lblErrorMessage);
             Controls.Add(buttonLogin);
             Controls.Add(textBoxPassword);
             Controls.Add(labelPassword);
@@ -112,6 +101,5 @@
         private TextBox textBoxPassword;
         private Label labelPassword;
         private Button buttonLogin;
-        private Label lblErrorMessage;
     }
 }
