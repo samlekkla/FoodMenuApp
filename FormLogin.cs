@@ -13,13 +13,13 @@ namespace GrupparbeteFoodapplication
     public partial class FormLogin : Form
     {
 
-        private readonly FormStart _formStart;
+        private readonly FormSearch _formSearch;
 
 
-        public FormLogin(FormStart formStart)
+        public FormLogin(FormSearch formSearch)
         {
             InitializeComponent();
-            _formStart = formStart;
+            _formSearch = formSearch;
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
@@ -31,18 +31,18 @@ namespace GrupparbeteFoodapplication
             {
                 Formcrud crudForm = new Formcrud();
                 crudForm.Show();
-                this.Hide(); 
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Felaktigt användarnamn eller lösenord.");
+                MessageBox.Show("Felaktigt användarnamn eller lösenord.", "Felaktigt infomration", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private bool IsValidAdmin(string username, string password)
         {
-            
-            return username == "admin" && password == "password"; 
+
+            return username == "admin" && password == "password";
         }
     }
 }
