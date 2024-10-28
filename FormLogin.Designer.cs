@@ -38,41 +38,49 @@
             // labelUsername
             // 
             labelUsername.AutoSize = true;
-            labelUsername.Location = new Point(218, 142);
+            labelUsername.ForeColor = Color.Navy;
+            labelUsername.Location = new Point(214, 165);
+            labelUsername.Margin = new Padding(4, 0, 4, 0);
             labelUsername.Name = "labelUsername";
-            labelUsername.Size = new Size(75, 20);
+            labelUsername.Size = new Size(91, 25);
             labelUsername.TabIndex = 0;
             labelUsername.Text = "Username";
             // 
             // textBoxUsername
             // 
-            textBoxUsername.Location = new Point(218, 165);
+            textBoxUsername.Location = new Point(214, 194);
+            textBoxUsername.Margin = new Padding(4);
             textBoxUsername.Name = "textBoxUsername";
-            textBoxUsername.Size = new Size(192, 27);
+            textBoxUsername.Size = new Size(239, 31);
             textBoxUsername.TabIndex = 1;
             // 
             // textBoxPassword
             // 
-            textBoxPassword.Location = new Point(219, 242);
+            textBoxPassword.Location = new Point(214, 289);
+            textBoxPassword.Margin = new Padding(4);
             textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(192, 27);
+            textBoxPassword.Size = new Size(239, 31);
             textBoxPassword.TabIndex = 3;
             textBoxPassword.UseSystemPasswordChar = true;
             // 
             // labelPassword
             // 
             labelPassword.AutoSize = true;
-            labelPassword.Location = new Point(218, 218);
+            labelPassword.ForeColor = Color.Navy;
+            labelPassword.Location = new Point(218, 260);
+            labelPassword.Margin = new Padding(4, 0, 4, 0);
             labelPassword.Name = "labelPassword";
-            labelPassword.Size = new Size(70, 20);
+            labelPassword.Size = new Size(87, 25);
             labelPassword.TabIndex = 2;
             labelPassword.Text = "Password";
             // 
             // buttonLogin
             // 
-            buttonLogin.Location = new Point(266, 291);
+            buttonLogin.ForeColor = Color.Navy;
+            buttonLogin.Location = new Point(258, 358);
+            buttonLogin.Margin = new Padding(4);
             buttonLogin.Name = "buttonLogin";
-            buttonLogin.Size = new Size(94, 29);
+            buttonLogin.Size = new Size(136, 36);
             buttonLogin.TabIndex = 5;
             buttonLogin.Text = "SIGN IN";
             buttonLogin.UseVisualStyleBackColor = true;
@@ -80,14 +88,16 @@
             // 
             // FormLogin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 450);
+            BackColor = Color.MediumAquamarine;
+            ClientSize = new Size(673, 543);
             Controls.Add(buttonLogin);
             Controls.Add(textBoxPassword);
             Controls.Add(labelPassword);
             Controls.Add(textBoxUsername);
             Controls.Add(labelUsername);
+            Margin = new Padding(4);
             Name = "FormLogin";
             Text = "FormLogin";
             ResumeLayout(false);

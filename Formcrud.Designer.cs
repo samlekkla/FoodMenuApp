@@ -45,9 +45,11 @@
             // 
             // buttonSave
             // 
-            buttonSave.Location = new Point(172, 325);
+            buttonSave.ForeColor = Color.Navy;
+            buttonSave.Location = new Point(56, 463);
+            buttonSave.Margin = new Padding(4, 4, 4, 4);
             buttonSave.Name = "buttonSave";
-            buttonSave.Size = new Size(94, 29);
+            buttonSave.Size = new Size(118, 36);
             buttonSave.TabIndex = 0;
             buttonSave.Text = "Save";
             buttonSave.UseVisualStyleBackColor = true;
@@ -55,9 +57,11 @@
             // 
             // buttonUpdate
             // 
-            buttonUpdate.Location = new Point(284, 325);
+            buttonUpdate.ForeColor = Color.Navy;
+            buttonUpdate.Location = new Point(201, 463);
+            buttonUpdate.Margin = new Padding(4, 4, 4, 4);
             buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(94, 29);
+            buttonUpdate.Size = new Size(118, 36);
             buttonUpdate.TabIndex = 1;
             buttonUpdate.Text = "Update";
             buttonUpdate.UseVisualStyleBackColor = true;
@@ -65,9 +69,11 @@
             // 
             // buttonDelete
             // 
-            buttonDelete.Location = new Point(410, 325);
+            buttonDelete.ForeColor = Color.Navy;
+            buttonDelete.Location = new Point(355, 463);
+            buttonDelete.Margin = new Padding(4, 4, 4, 4);
             buttonDelete.Name = "buttonDelete";
-            buttonDelete.Size = new Size(94, 29);
+            buttonDelete.Size = new Size(118, 36);
             buttonDelete.TabIndex = 2;
             buttonDelete.Text = "Delete";
             buttonDelete.UseVisualStyleBackColor = true;
@@ -76,76 +82,90 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(118, 132);
+            label1.ForeColor = Color.Navy;
+            label1.Location = new Point(36, 108);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(40, 20);
+            label1.Size = new Size(49, 25);
             label1.TabIndex = 3;
             label1.Text = "Type";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(109, 90);
+            label2.ForeColor = Color.Navy;
+            label2.Location = new Point(36, 37);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(49, 20);
+            label2.Size = new Size(59, 25);
             label2.TabIndex = 4;
             label2.Text = "Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(81, 181);
+            label3.ForeColor = Color.Navy;
+            label3.Location = new Point(56, 254);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(85, 20);
+            label3.Size = new Size(102, 25);
             label3.TabIndex = 5;
             label3.Text = "Description";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(528, 86);
+            label4.ForeColor = Color.Navy;
+            label4.Location = new Point(16, 174);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(77, 20);
+            label4.Size = new Size(90, 25);
             label4.TabIndex = 6;
             label4.Text = "Recipe list";
             // 
             // comboBoxType
             // 
             comboBoxType.FormattingEnabled = true;
-            comboBoxType.Location = new Point(172, 129);
+            comboBoxType.Location = new Point(114, 105);
+            comboBoxType.Margin = new Padding(4, 4, 4, 4);
             comboBoxType.Name = "comboBoxType";
-            comboBoxType.Size = new Size(151, 28);
+            comboBoxType.Size = new Size(188, 33);
             comboBoxType.TabIndex = 7;
             // 
             // comboBoxRecipeView
             // 
             comboBoxRecipeView.FormattingEnabled = true;
-            comboBoxRecipeView.Location = new Point(611, 83);
+            comboBoxRecipeView.Location = new Point(114, 171);
+            comboBoxRecipeView.Margin = new Padding(4, 4, 4, 4);
             comboBoxRecipeView.Name = "comboBoxRecipeView";
-            comboBoxRecipeView.Size = new Size(151, 28);
+            comboBoxRecipeView.Size = new Size(188, 33);
             comboBoxRecipeView.TabIndex = 8;
             comboBoxRecipeView.SelectedIndexChanged += comboBoxRecipeView_SelectedIndexChanged;
             // 
             // textBoxName
             // 
-            textBoxName.Location = new Point(172, 83);
+            textBoxName.Location = new Point(114, 37);
+            textBoxName.Margin = new Padding(4, 4, 4, 4);
             textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(125, 27);
+            textBoxName.Size = new Size(188, 31);
             textBoxName.TabIndex = 9;
             // 
             // TextBoxDescription
             // 
-            TextBoxDescription.Location = new Point(172, 178);
+            TextBoxDescription.Location = new Point(56, 297);
+            TextBoxDescription.Margin = new Padding(4, 4, 4, 4);
             TextBoxDescription.Name = "TextBoxDescription";
-            TextBoxDescription.Size = new Size(256, 120);
+            TextBoxDescription.Size = new Size(417, 149);
             TextBoxDescription.TabIndex = 10;
             TextBoxDescription.Text = "";
             // 
             // buttonRefresh
             // 
-            buttonRefresh.Location = new Point(434, 178);
+            buttonRefresh.ForeColor = Color.Navy;
+            buttonRefresh.Location = new Point(333, 254);
+            buttonRefresh.Margin = new Padding(4, 4, 4, 4);
             buttonRefresh.Name = "buttonRefresh";
-            buttonRefresh.Size = new Size(112, 41);
+            buttonRefresh.Size = new Size(140, 38);
             buttonRefresh.TabIndex = 11;
             buttonRefresh.Text = "Refresh";
             buttonRefresh.UseVisualStyleBackColor = true;
@@ -153,9 +173,11 @@
             // 
             // buttonTestError
             // 
-            buttonTestError.Location = new Point(602, 408);
+            buttonTestError.ForeColor = Color.Navy;
+            buttonTestError.Location = new Point(658, 526);
+            buttonTestError.Margin = new Padding(4, 4, 4, 4);
             buttonTestError.Name = "buttonTestError";
-            buttonTestError.Size = new Size(160, 57);
+            buttonTestError.Size = new Size(133, 85);
             buttonTestError.TabIndex = 12;
             buttonTestError.Text = "TestError";
             buttonTestError.UseVisualStyleBackColor = true;
@@ -163,9 +185,10 @@
             // 
             // Formcrud
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 477);
+            BackColor = Color.MediumAquamarine;
+            ClientSize = new Size(804, 624);
             Controls.Add(buttonTestError);
             Controls.Add(buttonRefresh);
             Controls.Add(TextBoxDescription);
@@ -179,6 +202,9 @@
             Controls.Add(buttonDelete);
             Controls.Add(buttonUpdate);
             Controls.Add(buttonSave);
+            Enabled = false;
+            ForeColor = SystemColors.ControlText;
+            Margin = new Padding(4, 4, 4, 4);
             Name = "Formcrud";
             Text = "Formcrud";
             ResumeLayout(false);
