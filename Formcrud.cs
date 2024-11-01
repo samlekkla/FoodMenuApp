@@ -10,7 +10,7 @@ namespace GrupparbeteFoodapplication
         public Formcrud()
         {
             InitializeComponent();
-            recipemanager = new Recipemanager(@"C:\Users\Sam\Desktop\CloudAzure-Jensen\WorkShopAdressBook\Databases\recipes.json");
+            recipemanager = new Recipemanager(@"C:\Users\harit\Source\Repos\GrupparbeteFoodapplicationlocalcopy\Databases\recipes.json");
             LoadRecipes();
             PopulateTypeComboBox();
             PopulateRecipeComboBox();
@@ -18,7 +18,7 @@ namespace GrupparbeteFoodapplication
 
         private void Log(string message)
         {
-            string logFilePath = @"C:\Users\Sam\Desktop\CloudAzure-Jensen\WorkShopAdressBook\Logs\log.txt";
+            string logFilePath = @"C:\Users\harit\Source\Repos\GrupparbeteFoodapplicationlocalcopy\log.txt";
             Directory.CreateDirectory(Path.GetDirectoryName(logFilePath));
 
             using (StreamWriter writer = new StreamWriter(logFilePath, true))
