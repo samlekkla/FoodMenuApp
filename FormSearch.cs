@@ -11,7 +11,7 @@ namespace GrupparbeteFoodapplication
         public FormSearch()
         {
             InitializeComponent();
-            recipemanager = new Recipemanager(@"C:\Users\Sam\Desktop\CloudAzure-Jensen\WorkShopAdressBook\Databases\recipes.json");
+            recipemanager = new Recipemanager(@"C:\Users\harit\Source\Repos\GrupparbeteFoodapplicationlocalcopy\Databases\recipes.json");
             PopulateTypeComboBox();
 
             LoadRecipes();
@@ -196,6 +196,7 @@ namespace GrupparbeteFoodapplication
             textBoxTitel.Clear();
             comboBoxType.SelectedIndex = -1;
             listBoxResult.Items.Clear();
+            listBoxRecipeDetails.Items.Clear();
 
         }
 

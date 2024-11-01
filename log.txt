@@ -1,0 +1,2 @@
+2024-10-30 09:34:47: Testfel inträffade: Detta är ett simulerat fel för att testa felhanteringen.
+2024-10-30 10:42:15: Testfel inträffade: Detta är ett simulerat fel för att testa felhanteringen.
